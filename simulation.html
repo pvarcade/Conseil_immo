@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation de Rentabilité</title>
+    <link rel="stylesheet" href="styles/global.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">MonConseilImmobilier</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="calculateur.html">Calculateur d'emprunt</a></li>
+                    <li><a href="simulation.html">Simulation de rentabilité</a></li>
+                    <li><a href="conseils.html">Conseils</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Simulation de Rentabilité</h1>
+            <p>Simulez la rentabilité de vos investissements immobiliers.</p>
+            <!-- Ajouter un formulaire pour la simulation -->
+            <form>
+                <label for="price">Prix d'achat (€) :</label>
+                <input type="number" id="price" name="price" required>
+                <label for="rent">Loyer mensuel (€) :</label>
+                <input type="number" id="rent" name="rent" required>
+                <label for="expenses">Charges annuelles (€) :</label>
+                <input type="number" id="expenses" name="expenses">
+                <button type="button" onclick="simulateProfit()">Simuler</button>
+            </form>
+            <div id="simulation-result">
+                <!-- Les résultats s'afficheront ici -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MonConseilImmobilier. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
